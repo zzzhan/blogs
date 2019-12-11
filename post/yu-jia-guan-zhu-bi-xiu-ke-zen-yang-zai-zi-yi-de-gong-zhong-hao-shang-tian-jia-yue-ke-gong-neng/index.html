@@ -1,0 +1,191 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    
+<meta charset="utf-8" >
+
+<title>瑜伽馆主必修课：怎样在自已的公众号上添加约课功能 | 爱课</title>
+<meta name="description" content="爱课小程序约课排课很简单">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="http://blogs.yohub.xyz/favicon.ico?v=1576048696111">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+<link rel="stylesheet" href="http://blogs.yohub.xyz/styles/main.css">
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+
+
+
+  </head>
+  <body>
+    <div id="app" class="main">
+      <div class="site-header-container">
+  <div class="site-header">
+    <div class="left">
+      <a href="http://blogs.yohub.xyz">
+        <img class="avatar" src="http://blogs.yohub.xyz/images/avatar.png?v=1576048696111" alt="" width="32px" height="32px">
+      </a>
+      <a href="http://blogs.yohub.xyz">
+        <h1 class="site-title">爱课</h1>
+      </a>
+    </div>
+    <div class="right">
+      <transition name="fade">
+        <i class="icon" :class="{ 'icon-close-outline': menuVisible, 'icon-menu-outline': !menuVisible }" @click="menuVisible = !menuVisible"></i>
+      </transition>
+    </div>
+  </div>
+</div>
+
+<transition name="fade">
+  <div class="menu-container" style="display: none;" v-show="menuVisible">
+    <div class="menu-list">
+      
+        
+          <a href="/" class="menu purple-link">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="menu purple-link">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="menu purple-link">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="menu purple-link">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+</transition>
+
+
+      <div class="content-container">
+        <div class="post-detail">
+          
+            <div class="feature-container" style="background-image: url('https://upload-images.jianshu.io/upload_images/1987061-a0acd5f0b1ff5dd4?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240')">
+            </div>
+          
+          <h2 class="post-title">瑜伽馆主必修课：怎样在自已的公众号上添加约课功能</h2>
+          <div class="post-info post-detail-info">
+            <span><i class="icon-calendar-outline"></i> 2019-11-02</span>
+            
+              <span>
+                <i class="icon-pricetags-outline"></i>
+                
+                  <a href="http://blogs.yohub.xyz/tag/9RVi0_7JH">
+                    爱课
+                    
+                      ，
+                    
+                  </a>
+                
+                  <a href="http://blogs.yohub.xyz/tag/0YvgHTIsg">
+                    小程序
+                    
+                      ，
+                    
+                  </a>
+                
+                  <a href="http://blogs.yohub.xyz/tag/OHVVyeUl0">
+                    瑜伽
+                    
+                      ，
+                    
+                  </a>
+                
+                  <a href="http://blogs.yohub.xyz/tag/-H_xwT-G_">
+                    约课软件
+                    
+                  </a>
+                
+              </span>
+            
+          </div>
+          <div class="post-content">
+            <p>作为馆主，已入驻了[爱课小程序]进行了排课，并让会员约课。而在日常的运营过程中也使用公众号与会员建立联系，希望把[爱课小程序]的约课功能整合到自己公众号中，方便会员可以从公众号那启动小程序进行约课。下面就教大家怎么在公众号中跳进自己的小程序。</p>
+<p>首先，打开[爱课小程序]，进入“我的”-“关于”页那里找到馆名称下面的代码,如图</p>
+<figure data-type="image" tabindex="1"><img src="https://upload-images.jianshu.io/upload_images/1987061-baaf3d65595751ac?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="爱课小程序"></figure>
+<p>第二步、关联爱课小程序</p>
+<p>打开微信公众平台的小程序管理，添加关联小程序。如图</p>
+<figure data-type="image" tabindex="2"><img src="https://upload-images.jianshu.io/upload_images/1987061-55ab699d6d5987cf?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="关联爱课小程序"></figure>
+<p>点击“添加”进行关联。</p>
+<figure data-type="image" tabindex="3"><img src="https://upload-images.jianshu.io/upload_images/1987061-23292550f111a1ea?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="关联爱课小程序"></figure>
+<p>输入APPID“wx4f604be3ae5cf662”找到爱课小程序完成关联。（上图已经关联所有红字提示）</p>
+<p>第三步、自定义约课菜单</p>
+<figure data-type="image" tabindex="4"><img src="https://upload-images.jianshu.io/upload_images/1987061-2d3bc542083f10c2?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="自定义约课菜单"></figure>
+<p>在公众平台管理后台，点击“自定义菜单”，添加菜单在菜单名称输入“我要约课”，菜单内容选择“小程序跳转”，点击“选择小程序”选择爱课小程序，这时“小程序路径”中显示“/pages/booking/booking&quot;，默认是跳转到爱课小程序自身，而不是馆主的小程序及相关排课列表。我们需要修改这个“小程序路径”，让其正确的跳转。将第一步在“关于”页记下的代码，如：akyj, 馆名称为“爱课瑜伽”。我们就可以将“小程度路径”改为“/pages/booking/booking?code=akyj&amp;name=爱课瑜伽”，即在原路径上追加“?code=馆代码&amp;name=馆名称”(馆代码和馆名称改为自身的)。最后“备用网页”随便选择自己的一篇公众号文章。点击“保存并发布”就大功告成了。</p>
+<figure data-type="image" tabindex="5"><img src="https://upload-images.jianshu.io/upload_images/1987061-15b350240c9a0624?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="爱课小程序码" title="爱课小程序码"></figure>
+
+          </div>
+        </div>
+
+        
+          <div class="next-post">
+            <a class="purple-link" href="http://blogs.yohub.xyz/post/guan-zhu-bi-xiu-ke-shi-yong-xiao-cheng-xu-rang-pai-ke-yue-ke-geng-jian-dan">
+              <h3 class="post-title">
+                下一篇：馆主必修课：使用小程序让排课约课更简单
+              </h3>
+            </a>
+          </div>
+          
+      </div>
+
+      
+
+      <div class="site-footer">
+  <div class="slogan">爱课小程序约课排课很简单</div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+  粤ICP备19153713号<br>
+Powered by <a href="https://yohub.xyz" target="_blank">爱课</a> | <a class="rss" href="http://blogs.yohub.xyz/atom.xml" target="_blank">RSS</a>
+</div>
+
+
+    </div>
+    <script type="application/javascript">
+
+hljs.initHighlightingOnLoad()
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+
+  </body>
+</html>
